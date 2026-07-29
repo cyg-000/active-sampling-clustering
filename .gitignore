@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Model checkpoints (large; results are in runs/comparison.csv)
+*.pt
+
+# Training artifacts — keep small result files, exclude large checkpoints
+*.pt
+logs/
+# archive directories (superseded training runs)
+**/archive/
+
+# R
+.Rhistory
+.RData
+.Ruserdata
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary / scratch files
+*.tmp
+scratchpad_*

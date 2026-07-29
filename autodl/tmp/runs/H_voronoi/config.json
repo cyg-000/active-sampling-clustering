@@ -1,0 +1,15 @@
+{
+  "target": "human",
+  "tag": "H_voronoi",
+  "scanpath": "full",
+  "split_by": "base_uuid",
+  "subset": "voronoi",
+  "epochs": 200,
+  "batch": 256,
+  "lr": 0.0006,
+  "seed": 0,
+  "no_gru": false,
+  "max_hours": 3.0,
+  "no_amp": false,
+  "resume": false
+}

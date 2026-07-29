@@ -1,0 +1,19 @@
+{
+  "target": "human",
+  "tag": "CAP0.0_s3",
+  "scanpath": "full",
+  "split_by": "base_uuid",
+  "subset": "all",
+  "epochs": 200,
+  "batch": 256,
+  "lr": 0.0006,
+  "seed": 3,
+  "no_gru": false,
+  "pairing": "meanmax",
+  "ncount": false,
+  "capacity": 0.0,
+  "cap": 4.0,
+  "max_hours": 3.0,
+  "no_amp": false,
+  "resume": false
+}

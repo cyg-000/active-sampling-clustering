@@ -1,0 +1,15 @@
+{
+  "target": "human",
+  "tag": "H_nogru",
+  "scanpath": "full",
+  "split_by": "base_uuid",
+  "subset": "all",
+  "epochs": 200,
+  "batch": 256,
+  "lr": 0.0006,
+  "seed": 0,
+  "no_gru": true,
+  "max_hours": 3.0,
+  "no_amp": false,
+  "resume": false
+}

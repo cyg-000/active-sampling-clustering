@@ -1,0 +1,40 @@
+test trials = 3295   stimuli = 8   (median 414 raters/stimulus)
+
+[inference] running CPU inference for each model ...
+   H_s0       mean ARI = 0.4456
+   H_s1       mean ARI = 0.4452
+   H_s2       mean ARI = 0.4346
+   R_gmm      mean ARI = 0.2182
+   R_dbscan   mean ARI = 0.3101
+   R_shuffle  mean ARI = 0.1548
+[consensus] computing single-other and leave-one-out consensus ARI ...
+[export] -> E:\deepseekapitest\dataana\ceiling\outputs\pertrial.csv  (3295 rows)
+
+======================================================================
+Result 6  Model-H vs lesioned targets (paired, per-trial ARI vs human)
+======================================================================
+  Model-H (seed-avg) mean ARI = 0.4418  [seeds 0.446/0.445/0.435]
+  H vs GMM target     : Δmean=+0.2236  dz=+1.01  Wilcoxon p=0.00e+00 | per-stimulus H>target in 8/8 (p=0.00781)
+  H vs DBSCAN target  : Δmean=+0.1317  dz=+0.44  Wilcoxon p=1.09e-132 | per-stimulus H>target in 7/8 (p=0.0391)
+  H vs shuffled target: Δmean=+0.2870  dz=+1.07  Wilcoxon p=0.00e+00 | per-stimulus H>target in 8/8 (p=0.00781)
+  H vs GMM-self       : Δmean=+0.2006  dz=+0.72  Wilcoxon p=6.03e-254 | per-stimulus H>ref in 7/8 (p=0.0156) [ref mean 0.241]
+  H vs DBSCAN-self    : Δmean=+0.0849  dz=+0.27  Wilcoxon p=5.50e-62 | per-stimulus H>ref in 4/8 (p=0.461) [ref mean 0.357]
+
+======================================================================
+Result 7  Calibration against the human consensus ceiling
+======================================================================
+  single-other (within format)     mean=0.3928  95% CI (stimulus-clustered) [0.339, 0.469]
+  consensus ceiling                mean=0.5172  95% CI (stimulus-clustered) [0.452, 0.604]
+  Model-H                          mean=0.4418  95% CI [0.374, 0.541]
+  Model-H / ceiling = 85%
+  H below consensus ceiling     : Δmean=-0.0754 dz=-0.36 Wilcoxon p=4.24e-87 | per-stimulus H < in 8/8 (p=0.00781)
+  H above single-other          : Δmean=+0.0490 dz=+0.37 Wilcoxon p=6.91e-75 | per-stimulus H > in 8/8 (p=0.00781)
+
+======================================================================
+Result 8  Human partitions are less separable (per-trial silhouette)
+======================================================================
+  median silhouette: human=0.3623  GMM=0.4118  DBSCAN=0.4647
+  mean   silhouette: human=0.3685  GMM=0.4019  DBSCAN=0.5071
+  human vs GMM    : Δmean=-0.0145 dz=-0.09 Wilcoxon p=4.29e-11 | per-stimulus human<GMM in 6/8 (p=0.688)
+  human vs DBSCAN : Δmean=-0.1305 dz=-0.57 Wilcoxon p=1.24e-157 | per-stimulus human<DBSCAN in 7/8 (p=0.156)
+  k: human=3.867  GMM=5.365  DBSCAN=3.352  (mixed-model post-hoc on pertrial.csv done in R)
