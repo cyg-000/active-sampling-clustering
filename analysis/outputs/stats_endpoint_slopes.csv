@@ -1,0 +1,19 @@
+model,condition,slope_k_vs_n,ari,slope_source,ari_source,note
+human,exp1,0.0848470422342973,,behavioral_population_slopes,-,observed
+Model-H,exp1,0.0065015450406399,0.3917503453985833,neural_oof_summary,neural_oof_summary,below human CI in exp1-3
+kmeans_auto,exp1,-0.004464285714285717,0.47538491023886237,kauto_perstim,lookers_fast_perstim,K inferred by silhouette; slope flat
+kmeans_given_K,exp1,0.0848470422342973,0.5971069550627518,by construction (= human K),lookers_fast_perstim,handed human K; K itself unexplained
+human,exp2,0.0629805029904673,,behavioral_population_slopes,-,observed
+Model-H,exp2,0.0077915239517495,0.5291864480820705,neural_oof_summary,neural_oof_summary,below human CI in exp1-3
+kmeans_auto,exp2,-0.004464285714285717,0.487023740166019,kauto_perstim,lookers_fast_perstim,K inferred by silhouette; slope flat
+kmeans_given_K,exp2,0.0629805029904673,0.57598534802618,by construction (= human K),lookers_fast_perstim,handed human K; K itself unexplained
+human,exp3,0.0328224946695095,,behavioral_population_slopes,-,observed
+Model-H,exp3,0.0047574626865671,0.4690321052731314,neural_oof_summary,neural_oof_summary,below human CI in exp1-3
+kmeans_auto,exp3,-0.004464285714285717,0.4758607387463764,kauto_perstim,lookers_fast_perstim,K inferred by silhouette; slope flat
+kmeans_given_K,exp3,0.0328224946695095,0.5790611031142193,by construction (= human K),lookers_fast_perstim,handed human K; K itself unexplained
+greedy,exp3,-0.008928571428571425,0.458951528135568,process_simulator_results,process_simulator_sensitivity,"quality-aspiration, no stopping hazard"
+human,exp4,0.029214950736044,,behavioral_population_slopes,-,observed
+Model-H,exp4,0.0234482571577826,0.4879403195983589,neural_oof_summary,neural_oof_summary,below human CI in exp1-3
+kmeans_auto,exp4,-0.004464285714285717,0.4661864092236132,kauto_perstim,lookers_fast_perstim,K inferred by silhouette; slope flat
+kmeans_given_K,exp4,0.029214950736044,0.5481076596634381,by construction (= human K),lookers_fast_perstim,handed human K; K itself unexplained
+greedy,exp4,-0.008928571428571433,0.4380387792542666,process_simulator_results,process_simulator_sensitivity,"quality-aspiration, no stopping hazard"

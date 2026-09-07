@@ -1,0 +1,9 @@
+metric,n_states,pearson_r,p,logloss,logloss_delta_vs_process
+state_level_r_all,42060.0,0.369252359666671,0.0,,
+state_level_r_exp3,28087.0,0.3424001383192643,0.0,,
+state_level_r_exp4,13973.0,0.4181570902604123,0.0,,
+state_level_r_terminal,11592.0,0.3583678153151352,0.0,,
+state_level_partial_r_control_k_n,42060.0,0.5822834958904775,0.0,,
+oof_logloss_process,,,,0.5550080292333616,
+oof_logloss_plus_silhouette,,,,0.550213500793769,-0.004794528439592605
+oof_logloss_plus_compactness,,,,0.5388994606811806,-0.016108568552181013

@@ -1,0 +1,3 @@
+metric,estimand,sampling_unit,comparison,n,mean_difference,sd_difference,ci_low,ci_high,t,df,p_two_sided,cohen_dz,bf10,bf01
+silhouette,best-found candidate minus human silhouette,base stimulus,paired within trial; trial gaps averaged within base_uuid,56,0.10249813923640261,0.014441928441969952,0.09863056554338216,0.10636571292942305,53.111040031182526,55,5.998079122575807e-49,7.097261258997164,1.9682268527922662e+45,5.0807151552745516e-46
+compactness,best-found candidate minus human compactness,base stimulus,paired within trial; trial gaps averaged within base_uuid,56,0.07126796200874817,0.01428627829413587,0.067442071697521,0.07509385231997534,37.33096766003978,55,9.370677844752983e-41,4.988560389307391,1.809579193625256e+37,5.526146650684187e-38
